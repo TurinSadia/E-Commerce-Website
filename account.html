@@ -1,0 +1,192 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="./css/images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="./css/images/cart.png" width="30px"></a>
+            <img src="./css/images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+
+    </div>
+<!-- ===================================Account page========================================================== -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="./css/images/image1.png" alt="">
+            </div>
+            <div class="col-2">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                    </div>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+
+
+                    </div>
+                    <form id="login" class="input-group">
+                        <input type="text" name="UserName" class="input-field" placeholder="User Id" required="">
+                        <input type="password" name="password" class="input-field" placeholder="User Password"
+                            required="">
+                        <input type="checkbox" name="checkbox" class="check-box"><span>Remember me</span>
+                        <button type="button" class="submit-btn">Log In</button>
+
+                    </form>
+
+                    <form id="register" class="input-group">
+                        <input type="text" name="UserName" class="input-field" placeholder="User Id" required="">
+                        <input type="email" name="Email" class="input-field" placeholder="Email Id" required="">
+                        <input type="password" name="password" class="input-field" placeholder="User Password"
+                            required="">
+                        <input type="checkbox" name="checkbox" class="check-box"><span>I agree to terms &amp;
+                            conditions </span>
+                        <button type="button" class="submit-btn">Register</button>
+
+                    </form>
+
+                </div>
+           
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+                   
+
+
+        
+
+      
+    <!-- ===============================================Home Section End============================================== -->
+
+    <!-- ===============================================Footer Section Start====================================== -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="./css/images/play-store.png" alt="">
+                        <img src="./css/images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./css/images/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repudiandae deleniti commodi quia.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright-2020</p>
+        </div>
+    </div>
+
+
+    <!-- ===============================================Footer Section End====================================== -->
+
+       <!-- ------------------------------------------scroll-top-btn----------------------------------------------- -->
+       <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+
+    <!-- =================================================ALL JS files====================================== -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- -------------------------------------for menu------------------------------------- -->
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+
+                MenuItems.style.maxHeight = "200px";
+            } else {
+
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+
+
+    <!-- -----------------------------------for form---------------------------------------- -->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-450px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+
+        }
+    </script>
+
+
+    </script>
+</body>
+
+</html>

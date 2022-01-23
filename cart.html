@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- ===========================================Google Fonts==================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ===========================================Font Awesome file==================================================== -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- ===========================================CSS file==================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===============================================Home Section Start============================================= -->
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="./css/images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>
+            </nav>
+            <img src="./css/images/cart.png" width="30px">
+            <img src="./css/images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+
+    </div>
+
+    <!-- ===============================================Home Section End============================================== -->
+
+<!-- --------------------------------------------------------cart item details----------------------------- -->
+
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+<tr>
+    <td>
+        <div class="cart-info">
+        <img src="./css/images/buy-1.jpg" alt="">
+        <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price : $50.00</small>
+            <br>
+            <a href="">Remove</a>
+        </div>
+    </div>
+    </td>
+    <td><input type="number"  value="1"></td>
+    <td>$50.00</td>
+</tr>
+<tr>
+    <td>
+        <div class="cart-info">
+        <img src="./css/images/buy-2.jpg" alt="">
+        <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price : $75.00</small>
+            <br>
+            <a href="">Remove</a>
+        </div>
+    </div>
+    </td>
+    <td><input type="number"  value="1"></td>
+    <td>$50.00</td>
+</tr>
+<tr>
+    <td>
+        <div class="cart-info">
+        <img src="./css/images/buy-3.jpg" alt="">
+        <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price : $80.00</small>
+            <br>
+            <a href="">Remove</a>
+        </div>
+    </div>
+    </td>
+    <td><input type="number"  value="1"></td>
+    <td>$50.00</td>
+</tr>
+
+
+    </table>
+
+<div class="total-price">
+    <table>
+        <tr>
+            <td>SubTotal</td>
+            <td>200.00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>30.00</td>
+        </tr>
+        <tr>
+            <td><b>Total</b></td>
+            <td><b>230.00</b></td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+
+
+
+    <!-- ===============================================Footer Section Start====================================== -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="./css/images/play-store.png" alt="">
+                        <img src="./css/images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./css/images/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repudiandae deleniti commodi quia.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright-2020</p>
+        </div>
+    </div>
+
+
+    <!-- ===============================================Footer Section End====================================== -->
+
+<!-- ------------------------------------------scroll-top-btn----------------------------------------------- -->
+<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+<!-- =================================================ALL JS files====================================== -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+
+</html>
